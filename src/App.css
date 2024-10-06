@@ -1,144 +1,37 @@
-.card{
-    height: 300px;
-    width: 100%;
-    /* gap: 6px; */
-    margin-top: 3%;
-    margin-bottom: 1%;
-    padding: 0% 3%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 20px;
-    background-color: rgba(218, 227, 243);}
+body{
+  background-image: url("./images/background.jpg");
+    background-size: cover; /* لتغطية كامل الشاشة */
+    /* background-position: center; لتوسيط الصورة */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+}
+ 
+.aboutus {
+  background-color: rgba(240, 249, 255, 0.4);
+  width: 50%;
+  height: 92%;
+  float: right;
+  margin: 2% 4%;
+  padding: 2%;
+  border: none;
+  display: grid;
+  gap: 7px;
+}
+#H3{
+  text-align: center;
+}
+.text4{
+  /* overflow-wrap: break-word; كسر الكلمة تلقائيًا عند الحاجة */
+  word-break: break-all; 
+}
+ 
 
-.card .imageDashboard{
-    width: 100%;
-    height: 100%;
-    filter: drop-shadow(-10px 20px 5px rgba(11, 3, 3, 0.585));
-    object-fit: fill;
-    margin: 0% 0% 0% -7%;
-}
- .card .C1{
-    background-color:  rgba(218, 227, 243);
-    width: 25%;
-    height: 70%;
-}
-
-.card .productdetails{    
-    width: 100%;
-    height: 80%;
-    padding-top: 0.8%;
-    padding-bottom: 0.8%;
-    margin-top: 0.2%;
-    margin-bottom: 0.2%;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(38, 2, 2, 0.453);
-}
-
-.card .productName{
-    /* font-size: 25px; */
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin: 2% 0% 3% 0%;
-    align-items: center;
-    text-align: center;
-    font-size: 2.5vw;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis
-}
-
-.card .PI{
-    width: 100%;
-    height:90% ;
-    margin-top: -20px;
-    align-items:center;
-    display: flex;
-    justify-content: space-around;
-}
-.card .pdf{
-    width: 15%;
-    height: 51%;
-    margin-left: 2%;
-    margin-right: 12%;
-}
-.card .productdeDescription{
-    width: 59%;
-    font-size: 2vw;
-    margin: 4% 2% 4% 2%;
-    padding: 6% 2% 6% 2%;
-    overflow-wrap: break-word;
-} 
-
-.card .icons{
-    width: 10%;
-    cursor: pointer;
-}
-.card .iconimage{
-    width: 70%;
-    padding-bottom: 0%;
-    margin-top: 40%;
-    margin-left: -12%;
-    margin-right: 10%;
-}
-
-.card .nameicons1{
-    margin-left: 4%;
-    margin-right: 10%;
-    margin-top: 7%;
-}
-.card .nameicons2 {
-    margin-left: -4%;
-    margin-right: 10%;
-    margin-top: 8%;
-}
- .card .C2{
-    /* background-color: beige; */
-    height: 90%;
-    width: 74%;
-    max-width: 644px;
-}
-
-  .C2 .C3{
-    width: 70%;
-    height: 20px;
-    overflow: hidden;
-    word-break: break-all;
-    padding: 0% 2% 10% 2%;
-    margin: 2% 0% 2% 16%;
-    font-size: calc(1rem + 0.5vw);
- }
-
- .C3 a{
-    font-weight: bold;
-}
-
-@media (min-width: 1201px) {
-    .card {
-        font-size: 2vw;  /* حجم النص بشكل متناسب */
-    }
-}
-
-/* للشاشات المتوسطة مثل الحواسيب المحمولة والتابلت */
-@media (max-width: 1200px) and (min-width: 769px) {
-    .card {
-        font-size: 2.5vw;  /* حجم النص متناسب */
-    }
-}
-
-/* للشاشات الصغيرة مثل الهواتف الذكية */
-@media (max-width: 768px) and (min-width: 481px) {
-    .card {
-        font-size: 3.5vw;
-    }
-}
-
-/* للشاشات الصغيرة جدًا (الهواتف الصغيرة جدًا) */
-@media (max-width: 480px) {
-    .card {
-        font-size: 4.5vw;
-    }
-}
+/* @media ( width < 780px ){
+  .text4{
+    font-size: 1.8vw;
+  }
+} */
+/* @media ( width < 700px ){
+  .text4{
+    font-size:1.8vw;
+  }
+} */

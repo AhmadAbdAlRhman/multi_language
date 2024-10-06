@@ -1,29 +1,25 @@
 // import logo from './logo.svg';
-import p6 from "./photo_2024-10-05_17-11-25.jpg"
 import './App.css';
 function App() {
   return (
-    <div className="card">
-      <div className="C1">
-        <img className="imageDashboard" src={p6} alt="helooo i am not heer" />
-      </div>
-      <div className="C2">
-        <div className="productdetails">
-          <h1 className="productName">
-            Lift Check Valve with SS screen DN350-1000{" "}
-          </h1>
-          <div className="PI">
-            <p className="productdeDescription">
-              hghgfhg mnzdbj,hvglwf ,hlkhlkaf ,kamsbdlhjhblascm,hhhhhhhhhhhhhbjjhsjhb,,,,,,,,,,,,,,,,,,,,,cmsncljhaljfm,n,jbljgasfcb,,,,cmbkugougefhnl
-            </p>
-            <img className="pdf" src={p6} alt="helooo i am not heer" />
-          </div>
-        </div>
-        <p className="C3"> <a href="#">Contact Us </a>
-          to order & inquire about this product 
-        </p>
-      </div>
-    </div>
+    <div class="aboutus">
+      <h3 className="text4" id="H3">
+        Johntek Valve: Leading in Water Valve Solutions Since 2017
+      </h3>
+      <h5 className="text4">
+        Since its establishment in 2017, Johntek Valve has become a trusted name in the water valve industry, committed to delivering the highest standards of quality and performance to our customers worldwide.
+      </h5>
+      <h5 className="text4">
+        Our products are designed with the latest technologies to ensure efficiency and reliability, allowing users to experience unprecedented control over water flow.
+      </h5>
+      <h5 className="text4">
+        At Johntek Valve, we take pride in offering a wide range of valves that meet the needs of various industries and applications, from residential uses to major industrial projects. 
+        Each of our products is rigorously tested to ensure quality and durability, contributing to providing sustainable and effective solutions for our clients
+      </h5>
+      <h5 className="text4">
+        Discover excellence with Johntek Valve and take the first step towards a safer and more efficient water system.
+      </h5>
+   </div>
   );
 }
 export default App;
