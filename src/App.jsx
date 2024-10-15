@@ -1,10 +1,32 @@
+import React, { useEffect } from "react";
 import "./App.css";
+import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 const App = () => {
   const { t, i18n } = useTranslation();
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
+  useEffect(() => {
+    var dir = "";
+    if (i18n.language === "ar") {
+      dir = "rtl";
+    } else if (i18n.language === "en") {
+      dir = "ltr";
+    } else {
+      dir = "ltr";
+    }
+    var lang = "";
+    if (i18n.language === "ar") {
+      lang = "ar";
+    } else if (i18n.language === "en") {
+      lang = "en";
+    } else {
+      lang = "tr";
+    }
+    document.documentElement.setAttribute("dir", dir);
+    document.documentElement.setAttribute("lang", lang);
+  }, [i18n.language]); // Re-run when the language changes
   return (
     <div className="App">
       <button onClick={() => changeLanguage("ar")}>Arabic</button>

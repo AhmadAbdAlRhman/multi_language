@@ -9,7 +9,15 @@
   min-width: 320px;
   min-height: 100vh;
 }
+/* For left-to-right text direction */
+html[dir="ltr"] {
+  text-align: left;
+}
 
+/* For right-to-left text direction */
+html[dir="rtl"] {
+  text-align: right;
+}
 .container{
   display: flex;
   flex-direction: column;
