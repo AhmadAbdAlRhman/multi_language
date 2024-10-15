@@ -1,37 +1,33 @@
-body{
-  background-image: url("./images/background.jpg");
-    background-size: cover; /* لتغطية كامل الشاشة */
-    /* background-position: center; لتوسيط الصورة */
-    background-repeat: no-repeat; /* عدم تكرار الصورة */
+/* body{
+  font-family: sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  margin: 0;
+  display: flex;
+  padding: 20px;
+  min-width: 320px;
+  min-height: 100vh;
 }
- 
-.aboutus {
-  background-color: rgba(240, 249, 255, 0.4);
-  width: 50%;
-  height: 92%;
-  float: right;
-  margin: 2% 4%;
-  padding: 2%;
-  border: none;
-  display: grid;
-  gap: 7px;
-}
-#H3{
-  text-align: center;
-}
-.text4{
-  /* overflow-wrap: break-word; كسر الكلمة تلقائيًا عند الحاجة */
-  word-break: break-all; 
-}
- 
 
-/* @media ( width < 780px ){
-  .text4{
-    font-size: 1.8vw;
-  }
+.container{
+  display: flex;
+  flex-direction: column;
 } */
-/* @media ( width < 700px ){
-  .text4{
-    font-size:1.8vw;
-  }
-} */
+.privacyPolicy{
+    background-color: white;
+    padding: 5% 4%;
+    margin: 6% 11%;
+    box-shadow: 0 25px 32px rgba(38, 2, 2, 0.5);
+}
+
+#H1privacy{
+    text-align: center;
+}
+.text1{
+    padding:0% 6%  ;
+    overflow-wrap: break-word;
+}
+#pprivacy{
+    padding: 2% 6%;
+}

@@ -1,51 +1,23 @@
-import i18n from 'i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import { initReactI18next, Translation } from 'react-i18next';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import HttpBackend from "i18next-http-backend";
+import LanguageDetector from "i18next-browser-languagedetector";
+
 i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
+  .use(HttpBackend) // Load translations from JSON files
+  .use(LanguageDetector) // Detect user language
+  .use(initReactI18next) // Pass i18n instance to react-i18next
   .init({
-    debug: true,
-    lng: "en",
-    resources: {
-      en: {
-        Translation: {
-          greeting: "Hello, World",
-        },
-      },
-      ar: {
-        Translation: {
-          greeting: "مرحبا, بالعالم",
-        },
-      },
-      tr: {
-        Translation: {
-          greeting: "Selam, Dünya",
-        },
-      },
+    fallbackLng: "en", // Default language if detected language is not available
+    lng: "en", // Default language (optional)
+    debug: true, // Enable debug logs in development
+    // ns: ["about us", "Privacy Policy"], // Specify namespaces
+    interpolation: {
+      escapeValue: false, // React already escapes values to prevent XSS
+    },
+    backend: {
+      loadPath: "/locales/{{lng}}/Privacy Policy.json", // Path to translation files
     },
   });
-i18n
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    debug: true,
-    lng: "en",
-    resources: {
-      en: {
-        Translation: {
-          greeting: "Hello, World",
-        },
-      },
-      ar: {
-        Translation: {
-          greeting: "مرحبا, بالعالم",
-        },
-      },
-      tr: {
-        Translation: {
-          greeting: "Selam, Dünya",
-        },
-      },
-    },
-  });
+
+export default i18n;
